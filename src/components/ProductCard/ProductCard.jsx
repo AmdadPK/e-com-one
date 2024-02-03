@@ -11,7 +11,7 @@ const priceFormat = (price) =>
 const ProductCard = (props) => {
   return (
     <div className='product-card'>
-      <Link to={`/product/${props.id}`}>
+      <Link to={`/product/${props.id}`} onClick={window.scrollTo(0, 0)}>
         <div className="image">
           <img src={props.image} alt="" />
         </div>
