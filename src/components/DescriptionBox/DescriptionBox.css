@@ -1,0 +1,33 @@
+.descriptiob-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-nav {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.description-nav .title{
+  height: 50px;
+  line-height: 50px;
+  background-color: transparent;
+  padding: 0 20px;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.description-nav .title.active {
+  background-color: var(--div);
+  color: var(--primary);
+}
+
+.description-content {
+  width: 100%;
+  background-color: var(--div);
+  padding: 30px 20px;
+}

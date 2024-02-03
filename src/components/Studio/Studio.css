@@ -1,0 +1,40 @@
+.studio-style {
+  background-image: var(--bag-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0px;
+  background-attachment: fixed;
+}
+
+.studio-info {
+  width: fit-content;
+  background-color: #ffffff80;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.studio-info .title {
+  font-size: 53px;
+  line-height: 60px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 7px;
+}
+
+.studio-info .s-title {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 7px;
+}
+
+.studio-info .offer {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}

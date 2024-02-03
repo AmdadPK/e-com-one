@@ -1,0 +1,51 @@
+.slider {
+  position: relative;
+  min-height: 400px;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider-info {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--black);
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.shop-btn {
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 8px 15px;
+  font-size: 14px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.shop-btn:hover {
+  background-color: var(--black); 
+}

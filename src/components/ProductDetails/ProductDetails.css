@@ -1,0 +1,156 @@
+.top-details {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.product-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.thums-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.thums-image img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.main-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.shot-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.shot-info .model {
+  color: var(--black);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.shot-info .model span {
+  font-weight: 500;
+}
+
+.shot-info .size,
+.shot-info .color {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shot-info .size h3,
+.shot-info .color h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--black);
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
+.shot-info .size > div,
+.shot-info .color > div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shot-info .size > div span {
+  height: 35px;
+  width: 45px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shot-info .size > div span.active{
+  color: var(--primary);
+  background-color: var(--div);
+}
+
+.shot-info .color h3 span:nth-of-type(2) {
+  text-transform: capitalize;
+}
+
+.shot-info .color > div span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price-bag{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bag-button {
+  background-color: var(--primary);
+  padding: 9px 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.bag-button:hover {
+  background-color: var(--black);
+}
+
+.price-bag span {
+  font-size: 15px;
+}
+
+.price-bag span.new {
+  color: var(--black);
+  font-weight: 500;
+}
+
+.product-category {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-category div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-category span {
+  color: var(--black);
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.product-category span:nth-child(1) {
+  font-weight: 600;
+}

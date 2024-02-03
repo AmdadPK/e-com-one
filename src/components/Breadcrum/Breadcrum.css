@@ -1,0 +1,32 @@
+.breadcrum {
+  margin-bottom: 40px;
+}
+
+.breadcrum ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.breadcrum ul li,
+.breadcrum ul li a {
+  color: var(--black);
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.breadcrum ul li a:hover {
+  color: var(--primary);
+}
+
+.breadcrum ul li:last-child{
+  color: var(--primary);
+}
+
+.breadcrum ul li svg {
+  padding-top: 4px;
+  font-size: 18px;
+}

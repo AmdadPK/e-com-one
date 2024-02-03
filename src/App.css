@@ -1,38 +1,88 @@
-.App {
+:root {
+  --primary: #e0641d;
+  --black: #1b1b1b;
+  --white: #ffff;
+  --div: #ffffff;
+  --text: #767676;
+  --body: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--body);
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* section header css start */
+.section-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-header h5 {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-header h2 {
+  color: var(--black);
+  font-size: 26px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* New amd Popular collection section css */
+.new-collection,
+.popular-collection {
+  padding: 60px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.related-collection {
+  padding: 60px 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-collection .new-product,
+.popular-collection .popular-product,
+.related-collection .related-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.product-details {
+  padding: 40px 0 60px;
 }

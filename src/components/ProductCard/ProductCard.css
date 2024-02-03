@@ -1,0 +1,36 @@
+.product-card {
+  background-color: var(--div);
+}
+
+.image,
+.image img {
+  max-width: 100%;
+}
+
+.details {
+  padding: 10px 10px 15px;
+}
+
+.name {
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  font-size: 400;
+}
+
+.new {
+  color: var(--black);
+}
+
+.old {
+  color: var(--text);
+  text-decoration-line: line-through;
+}
