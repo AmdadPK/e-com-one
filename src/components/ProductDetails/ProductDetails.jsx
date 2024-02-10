@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './ProductDetails.css'
 import { BiRightArrowAlt } from 'react-icons/bi';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { productColor, productSize } from '../../data/size_color';
+import { ShopContext } from '../../Context/ShopContxt';
 
 const priceFormat = (price) =>
         new Intl.NumberFormat('en-US', {
@@ -14,6 +15,7 @@ const ProductDetails = (props) => {
   const {product} = props
   const [proSize, setProSize] = useState(1)
   const [proColor, setProColor] = useState(0)
+  const {addToCart} = useContext(ShopContext)
 
   return (
     <div className="top-details">
@@ -60,7 +62,7 @@ const ProductDetails = (props) => {
           </div>
         </div>
         <div className="price-bag">
-          <button className="btn bag-button">
+          <button className="btn bag-button" onClick={() => {addToCart(product)}}>
             <MdOutlineShoppingCart fontSize={16} />
             Add to bag
           </button>
