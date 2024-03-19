@@ -62,7 +62,7 @@ const ProductDetails = (props) => {
           </div>
         </div>
         <div className="price-bag">
-          <button className="btn bag-button" onClick={() => {addToCart(product)}}>
+          <button className="btn bag-button" onClick={() => {addToCart(product.id)}}>
             <MdOutlineShoppingCart fontSize={16} />
             Add to bag
           </button>

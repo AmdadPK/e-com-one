@@ -2,23 +2,23 @@
   background-color: var(--div);
 }
 
-.image,
-.image img {
+.product-card .image,
+.product-card .image img {
   max-width: 100%;
 }
 
-.details {
+.product-card .details {
   padding: 10px 10px 15px;
 }
 
-.name {
+.product-card .name {
   color: var(--black);
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.price {
+.product-card .price {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -26,11 +26,11 @@
   font-size: 400;
 }
 
-.new {
+.product-card .new {
   color: var(--black);
 }
 
-.old {
+.product-card .old {
   color: var(--text);
   text-decoration-line: line-through;
 }

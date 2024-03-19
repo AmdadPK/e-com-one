@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Outlet, Link } from "react-router-dom";
 import './Navbar.css'
 import { GiShoppingCart } from "react-icons/gi"
+import { ShopContext } from '../../Context/ShopContxt';
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop")
+  const {getTotalCartItems} = useContext(ShopContext)
   return (
     <div className='navbar'>
       <div className="container">
@@ -24,7 +26,7 @@ const Navbar = () => {
             <Link to="/login">login</Link>
             <div className="cart">
               <Link to="/cart"><GiShoppingCart /></Link>
-              <span>07</span>
+              <span>{getTotalCartItems()}</span>
             </div>
           </div>
         </div>

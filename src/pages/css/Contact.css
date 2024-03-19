@@ -1,0 +1,56 @@
+.contact {
+  padding: 80px 0 60px;
+}
+
+.contact .info {
+  display: flex;
+  gap: 50px;
+}
+
+.contact .info .left,
+.contact .info .image {
+  flex: 1;
+}
+
+.contact .info .left .short {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.contact .info .left .title {
+  color: var(--black);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.contact .info .left .details {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.contact .info .address {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.contact .info .address h4 {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact .info .address span {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+}
