@@ -38,3 +38,16 @@
   letter-spacing: 5px;
   margin-bottom: 15px;
 }
+
+.studio-info .shop-btn {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--primary);
+  transition: .3s;
+}
+
+.studio-info .shop-btn:hover {
+  color: var(--black);
+}

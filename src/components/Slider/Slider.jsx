@@ -12,7 +12,7 @@ const Slider = () => {
           <div className="content">
             <h1>This is our new collection products!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum hic voluptas tenetur itaque voluptatum maxime deleniti? Illo quisquam quae dolor modi, accusantium magni recusandae quasi excepturi, rem, corrupti earum nisi.</p>
-            <Link to="/product" className='shop-btn'>Shop Now</Link>
+            <Link to="/kid" className='shop-btn'>Shop Now</Link>
           </div>
         </div>
       </div>

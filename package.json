@@ -1,5 +1,6 @@
 {
   "name": "e-com-one",
+  "homepage": "https://pingkel.jumriz.com/react/ecom",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

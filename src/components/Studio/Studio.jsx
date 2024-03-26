@@ -11,7 +11,7 @@ const Studio = () => {
           <div className="title">Style Studio</div>
           <div className="s-title">the Fashion  store</div>
           <div className="offer">50% Sale offer</div>
-          <Link to="/product" className='shop-btn'>Shop Now</Link>
+          <Link to="/men" className='shop-btn'>Shop Now</Link>
         </div>
       </div>
     </div>

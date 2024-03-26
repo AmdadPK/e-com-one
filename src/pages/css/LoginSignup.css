@@ -38,7 +38,7 @@
 }
 
 .submit-btn {
-  background-color: #a6866a;
+  background-color: var(--primary);
   border: none;
   color: #fff;
   font-size: 14px;
